@@ -3,7 +3,7 @@
 import type { DragEvent, FormEvent } from "react";
 import { useCallback, useRef, useState } from "react";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = process.env.NEXT_PUBLIC_BACKEND_URL || `http://127.0.0.1:8000`;
 
 const LANGUAGES = [
   { label: "None (subtitles only)", value: "" },
